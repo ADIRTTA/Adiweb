@@ -72,11 +72,6 @@ def subnet_calculator():
     # Placeholder for actual subnet calculator
     print(f"{fgreen}Subnet: 255.255.255.0{cln}\n")
 
-def nmap_port_scan(domain):
-    print(f"{bold}{red}[iNFO] NMAP Port Scan on: {domain}{cln}")
-    os.system(f"nmap {domain}")
-    print(f"{bold}{red}[iNFO] NMAP Scan Completed!{cln}\n")
-
 def subdomain_scanner(domain):
     print(f"{bold}{yellow}[iNFO] Subdomain Scanner for: {domain}{cln}")
     # Placeholder for actual subdomain scanner
@@ -148,7 +143,7 @@ def start_scan():
         {fgreen}[8] {red}SQLi Scanner{cln}
         {fgreen}[9] {red}Bloggers View{cln}
         {fgreen}[10] {red}WordPress Scan{cln}
-        {aqua}[A] {red}Scan For Everything{cln}
+        {mint}[A] {red}Scan For Everything{cln}
         """)
 
         user_option = userinput("Select option: ").lower()
@@ -164,16 +159,14 @@ def start_scan():
         elif user_option == "5":
             subnet_calculator()
         elif user_option == "6":
-            nmap_port_scan(domain)
-        elif user_option == "7":
             subdomain_scanner(domain)
-        elif user_option == "8":
+        elif user_option == "7":
             reverse_ip_cms(domain)
-        elif user_option == "9":
+        elif user_option == "8":
             sqli_scanner(domain)
-        elif user_option == "10":
+        elif user_option == "9":
             bloggers_view(domain)
-        elif user_option == "11":
+        elif user_option == "10":
             wordpress_scan(domain)
         elif user_option == "a":
             scan_everything(domain)
