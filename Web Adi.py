@@ -143,13 +143,12 @@ def start_scan():
         {fgreen}[3] {red}Grab Banners{cln}
         {fgreen}[4] {red}DNS Lookup{cln}
         {fgreen}[5] {red}Subnet Calculator{cln}
-        {aqua}[6] {red}NMAP Port Scan{cln}
         {fgreen}[7] {red}Subdomain Scanner{cln}
         {fgreen}[8] {red}Reverse IP Lookup & CMS Detection{cln}
         {fgreen}[9] {red}SQLi Scanner{cln}
         {fgreen}[10] {red}Bloggers View{cln}
         {fgreen}[11] {red}WordPress Scan{cln}
-        {mint}[A] {red}Scan For Everything{cln}
+        {aqua}[A] {red}Scan For Everything{cln}
         """)
 
         user_option = userinput("Select option: ").lower()
