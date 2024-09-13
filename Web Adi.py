@@ -31,7 +31,7 @@ def redhawk_banner():
 
 # Function to check if required modules are installed
 def check_modules():
-    print(f"\n{red}{bold}[+] RED HAWK FiX MENU [+]{cln}")
+    print(f"\n{red}{bold}[+] WEB FiX MENU [+]{cln}")
     print(f"{bold}{blue}[+] Checking if 'requests' module is installed...")
     try:
         import requests
